@@ -56,7 +56,13 @@
     <Analyzer Include="D:\Visual studio\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Demo\Scripts\Runtime\FPSMovementSettings.cs" />
+    <Compile Include="Assets\Demo\Scripts\Runtime\FPSMovement.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
+    <Compile Include="Assets\Demo\Scripts\Runtime\AnimEventReceiver.cs" />
+    <Compile Include="Assets\Demo\Scripts\Runtime\ScreenshotMaker.cs" />
+    <Compile Include="Assets\Demo\Scripts\Runtime\Weapon.cs" />
+    <Compile Include="Assets\Demo\Scripts\Runtime\FPSController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -763,6 +769,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="FPSAF.Editor.csproj">
+      <Project>{9265DF22-14DB-40F1-97DD-9E1DF9E841A9}</Project>
+      <Name>FPSAF.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="FPSAF.Runtime.csproj">
+      <Project>{537C042D-65E4-E6C1-73B6-FDB84A1121EE}</Project>
+      <Name>FPSAF.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
